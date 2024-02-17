@@ -1,7 +1,9 @@
+import GitHubCalendar from 'react-github-calendar';
+
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
   return (
-    <section className="min-h-screen flex flex-col gap-8">
+    <section className="min-h-screen flex flex-col justify-center gap-8">
       <h1 className="text-light-primary-r dark:text-dark-primary-r text-4xl font-semibold">
         About Me
       </h1>
@@ -30,6 +32,19 @@ export default function About() {
         <br />
         Let's connect and discuss how I can bring value to your next endeavor!
       </p>
+
+      <div className="mt-10 w-full border py-6 px-4 border-spacing-1 border-dark-primary-3l rounded-md shadow-2xl shadow-dark-primary-3l">
+        <GitHubCalendar
+          username="mohamedadelelbaik"
+          blockSize={13}
+          blockMargin={4}
+          fontSize={12}
+          year={2024}
+          blockRadius={1}
+          style={{ margin: 'auto' }}
+          // colorScheme="light"
+        />
+      </div>
     </section>
   );
 }
