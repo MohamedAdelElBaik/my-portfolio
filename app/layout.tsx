@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={activeDark ? 'dark' : 'light'}>
       <body
-        className={`${inter.className} bg-light-background dark:bg-dark-background text-light-secondaryForeground dark:text-dark-foreground`}
+        className={`${inter.className} bg-light-background dark:bg-dark-background text-light-secondary-r dark:text-dark-secondary-r`}
       >
-        <Navbar />
+        <Navbar activeDark={activeDark} setActiveDark={setActiveDark} />
         {children}
       </body>
     </html>
