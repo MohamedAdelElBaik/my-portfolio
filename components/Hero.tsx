@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center w-9/12 mx-auto gap-4">
+    <section className="min-h-screen flex flex-col justify-center gap-4">
       <span className="text-light-primary-r darK:text-dark-primary-r text-sm md:text-base">
         Hi, my name is
       </span>
