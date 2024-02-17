@@ -8,7 +8,7 @@ export default function Navbar({ activeDark, setActiveDark }) {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <nav className="fixed top-0 flex justify-between items-center bg-amb2er-800 py-5 px-10 w-full">
+    <nav className="bg-dark-background fixed top-0 flex justify-between items-center py-5 px-10 w-full">
       <h1 className="text-2xl font-bold text-light-primary-r dark:text-dark-primary-r">
         Mohamed Adel
       </h1>
@@ -19,7 +19,7 @@ export default function Navbar({ activeDark, setActiveDark }) {
         <div
           className={`${style.navContent} ${
             openNav ? 'flex' : 'hidden'
-          }  bg-dark-primary-3l md:bg-transparent`}
+          }  bg-dark-primary-3l md:bg-inherit`}
         >
           <ul className="flex flex-col md:static md:flex-row gap-5 font-semibold">
             <li className="cursor-pointer hover:text-dark-secondary-l">Home</li>
