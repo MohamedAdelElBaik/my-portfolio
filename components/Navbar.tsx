@@ -8,7 +8,7 @@ export default function Navbar({ activeDark, setActiveDark }) {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center bg-amb2er-800 p-3 w-11/12 mx-auto">
+    <nav className="fixed top-0 flex justify-between items-center bg-amb2er-800 py-5 px-10 w-full">
       <h1 className="text-2xl font-bold text-light-primary-r dark:text-dark-primary-r">
         Mohamed Adel
       </h1>
