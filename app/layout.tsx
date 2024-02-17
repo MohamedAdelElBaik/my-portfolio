@@ -27,6 +27,15 @@ export default function RootLayout({
       >
         <Navbar activeDark={activeDark} setActiveDark={setActiveDark} />
         {children}
+        <span className="fixed -rotate-90 bottom-40 -left-40 flex gap-10 items-center transition hover:-translate-y-6 duration-500">
+          <div className="w-32 h-0.5 bg-light-secondary-l dark:bg-dark-secondary-l"></div>
+          <a
+            href="mailto:mohamedadelelbeak@gmail.com"
+            className="text-sm text-light-primary-l dark:text-dark-primary-l hover:text-dark-primary-r"
+          >
+            MohamedAdelElbeak@gmail.com
+          </a>
+        </span>
       </body>
     </html>
   );
