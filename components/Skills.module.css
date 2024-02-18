@@ -1,0 +1,25 @@
+.box {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, 50px);
+}
+
+@media (min-width: 768px) {
+  .box {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, 60px);
+  }
+}
+
+.list li {
+  position: relative;
+}
+.list li::before {
+  position: absolute;
+  content: '⇒';
+  margin-right: 10px;
+  color: green;
+  left: -30px;
+}

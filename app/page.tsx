@@ -1,5 +1,6 @@
-import About from '@/components/About';
 import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Skills from '@/components/Skills';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="w-9/12 mx-auto">
         <Hero />
         <About />
+        <Skills />
       </div>
     </main>
   );
