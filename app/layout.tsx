@@ -7,6 +7,7 @@ import { Tomorrow } from 'next/font/google';
 import './globals.css';
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const tomorrow = Tomorrow({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -44,6 +45,7 @@ export default function RootLayout({
             MohamedAdelElbeak@gmail.com
           </a>
         </span>
+        <Footer />
       </body>
     </html>
   );
