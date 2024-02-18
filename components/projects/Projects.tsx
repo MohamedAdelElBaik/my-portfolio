@@ -3,7 +3,7 @@ import Skill from './Skill';
 
 export default function Projects() {
   return (
-    <section id="projects" className="min-h-screen flex flex-col pt-28">
+    <section id="projects" className="flex flex-col">
       <h1 className="text-3xl md:text-5xl text-light-primary-r dark:text-dark-primary-r">
         My Projects
       </h1>

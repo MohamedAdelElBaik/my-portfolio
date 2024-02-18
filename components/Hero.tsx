@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen pt-32 flex flex-col justify-center md:flex-row gap-8 items-center"
+      className="flex flex-col justify-center md:flex-row gap-8 items-center"
     >
       <div className="flex flex-col justify-center gap-2 md:gap-4 md:flex-1">
         <span className="text-light-primary-r darK:text-dark-primary-r text-sm md:text-base">

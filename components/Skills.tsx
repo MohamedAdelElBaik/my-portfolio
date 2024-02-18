@@ -14,7 +14,6 @@ const skills = [
   'next',
   'redux',
   'tailwind',
-  'radix-ui',
   'git',
 ];
 
@@ -22,12 +21,12 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-screen flex flex-col justify-center gap-8"
+      className="flex flex-col justify-center gap-4 md:gap-8"
     >
       <h1 className="text-2xl md:text-4xl font-semibold text-light-primary-r dark:text-dark-primary-r">
         My Skills
       </h1>
-      <div className="mb-20">
+      <div className="mb-8 md:mb-20">
         <ul
           className={`${style.list} text-sm md:text-xl pl-4 md:pl-8 space-y-4`}
         >
