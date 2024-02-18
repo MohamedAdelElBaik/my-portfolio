@@ -4,7 +4,16 @@ import Image from 'next/image';
 import { useState } from 'react';
 import style from './Navbar.module.css';
 
-export default function Navbar({ activeDark, setActiveDark }) {
+type NavbarProps = {
+  activeDark: boolean;
+  setActiveDark: React.Dispatch<React.SetStateAction<boolean>>;
+};
+type NavIconToggleProps = {
+  openNav: boolean;
+  setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export default function Navbar({ activeDark, setActiveDark }: NavbarProps) {
   const [openNav, setOpenNav] = useState(false);
 
   return (
@@ -58,7 +67,7 @@ export default function Navbar({ activeDark, setActiveDark }) {
   );
 }
 
-function NavIconToggle({ openNav, setOpenNav }) {
+function NavIconToggle({ openNav, setOpenNav }: NavIconToggleProps) {
   return (
     <>
       {
