@@ -1,11 +1,17 @@
 'use client';
 // import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+// import { Grandstander } from 'next/font/google';
+// import { Tourney } from 'next/font/google';
+// import { Tomorrow } from 'next/font/google';
+import { Tomorrow } from 'next/font/google';
 import './globals.css';
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 
-const inter = Inter({ subsets: ['latin'] });
+const tomorrow = Tomorrow({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+});
 
 // export const metadata: Metadata = {
 //   title: 'Mohamed Adel Portfolio',
@@ -23,10 +29,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={activeDark ? 'dark' : 'light'}>
       <body
-        className={`${inter.className} bg-light-background dark:bg-dark-background text-light-secondary-r dark:text-dark-secondary-r`}
+        className={`${tomorrow.className} bg-light-background bg-opacity-60 dark:bg-dark-background text-light-secondary-r dark:text-dark-secondary-r`}
       >
         <Navbar activeDark={activeDark} setActiveDark={setActiveDark} />
+
         {children}
+
         <span className="fixed -rotate-90 bottom-40 -left-40 flex gap-10 items-center transition hover:-translate-y-6 duration-500">
           <div className="w-32 h-0.5 bg-light-secondary-l dark:bg-dark-secondary-l"></div>
           <a
