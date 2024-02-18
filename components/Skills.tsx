@@ -24,11 +24,13 @@ export default function Skills() {
       id="skills"
       className="min-h-screen flex flex-col justify-center gap-8"
     >
-      <h1 className="text-3xl md:text-5xl font-semibold text-light-primary-r dark:text-dark-primary-r">
+      <h1 className="text-2xl md:text-4xl font-semibold text-light-primary-r dark:text-dark-primary-r">
         My Skills
       </h1>
       <div className="mb-20">
-        <ul className={`${style.list} text-base md:text-xl pl-8 space-y-4`}>
+        <ul
+          className={`${style.list} text-sm md:text-xl pl-4 md:pl-8 space-y-4`}
+        >
           <li className="hover:underline underline-offset-8 decoration-dark-primary-l">
             Creating dynamic and efficient web applications using the React
             library and the Next.js framework.
