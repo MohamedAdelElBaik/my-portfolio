@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         light: {
-          background: 'hsl(0, 0%, 100%)',
+          background: '#f4fcf7',
           primary: {
             r: 'hsl(142, 76%, 36%)',
             l: 'hsl(142, 76%, 36% , 0.5)',
@@ -24,12 +24,13 @@ const config: Config = {
           },
         },
         dark: {
-          background: 'hsl(224, 71%, 4%)',
+          background: '#041015',
           primary: {
             r: 'hsl(142, 71%, 45%)',
             l: 'hsl(142, 71%, 45% , 0.5)',
             '2l': 'hsl(142, 71%, 45% , 0.25)',
             '3l': 'hsl(142, 71%, 45% , 0.125)',
+            '4l': 'hsl(142, 71%, 45% , 0.05)',
           },
           secondary: {
             r: 'hsl(0, 0%, 95%)',
