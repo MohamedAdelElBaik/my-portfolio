@@ -8,7 +8,7 @@ export default function Navbar({ activeDark, setActiveDark }) {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <nav className="bg-light-background bg-opacity-95 dark:bg-opacity-90 dark:bg-dark-background fixed shadow-md shadow-dark-primary-3l top-0 flex justify-between items-center py-5 px-10 w-full">
+    <nav className="bg-light-background dark:bg-dark-background fixed z-50 shadow-md shadow-dark-primary-3l top-0 flex justify-between items-center py-5 px-10 w-full">
       <h1 className="text-2xl font-bold text-light-primary-r dark:text-dark-primary-r">
         Mohamed Adel
       </h1>
