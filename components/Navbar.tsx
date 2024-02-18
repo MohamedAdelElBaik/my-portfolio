@@ -22,15 +22,17 @@ export default function Navbar({ activeDark, setActiveDark }) {
           }  bg-dark-primary-3l md:bg-inherit`}
         >
           <ul className="flex flex-col md:static md:flex-row gap-5 font-semibold">
-            <li className="cursor-pointer hover:text-dark-secondary-l">Home</li>
             <li className="cursor-pointer hover:text-dark-secondary-l">
-              About
+              <a href="#home">Home</a>
             </li>
             <li className="cursor-pointer hover:text-dark-secondary-l">
-              Projects
+              <a href="#about">About</a>
             </li>
             <li className="cursor-pointer hover:text-dark-secondary-l">
-              Skills
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="cursor-pointer hover:text-dark-secondary-l">
+              <a href="#skills">Skills</a>
             </li>
           </ul>
           <div className="flex justify-between gap-8">

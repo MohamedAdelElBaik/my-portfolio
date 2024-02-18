@@ -20,7 +20,10 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="min-h-screen flex flex-col justify-center gap-8">
+    <section
+      id="skills"
+      className="min-h-screen flex flex-col justify-center gap-8"
+    >
       <h1 className="text-3xl md:text-5xl font-semibold text-light-primary-r dark:text-dark-primary-r">
         My Skills
       </h1>

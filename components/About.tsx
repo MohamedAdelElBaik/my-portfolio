@@ -3,7 +3,10 @@ import GitHubCalendar from 'react-github-calendar';
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
   return (
-    <section className="min-h-screen flex flex-col justify-center gap-8">
+    <section
+      id="about"
+      className="min-h-screen flex flex-col justify-center gap-8"
+    >
       <h1 className="text-light-primary-r dark:text-dark-primary-r text-4xl font-semibold">
         About Me
       </h1>
