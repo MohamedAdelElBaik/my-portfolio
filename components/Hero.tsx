@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
   return (
@@ -21,6 +23,9 @@ export default function Hero() {
       <span className="text-sm md:text-base text-dark-primary-l">
         Currently available for a job & freelance
       </span>
+      <div className="rounded-lg overflow-hidden object-fill w-72">
+        <Image src="/myImage.jpg" alt="mohamed" width={300} height={300} />
+      </div>
     </section>
   );
 }
