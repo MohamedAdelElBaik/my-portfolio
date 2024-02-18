@@ -8,7 +8,7 @@ export default function Navbar({ activeDark, setActiveDark }) {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <nav className="bg-dark-background fixed top-0 flex justify-between items-center py-5 px-10 w-full">
+    <nav className="bg-light-background bg-opacity-95 dark:bg-opacity-90 dark:bg-dark-background fixed shadow-md shadow-dark-primary-3l top-0 flex justify-between items-center py-5 px-10 w-full">
       <h1 className="text-2xl font-bold text-light-primary-r dark:text-dark-primary-r">
         Mohamed Adel
       </h1>
@@ -40,10 +40,11 @@ export default function Navbar({ activeDark, setActiveDark }) {
               Resume
             </button>
             <button
-              className="bg-dark-primary-l dark:bg-dark-secondary-l text-red-50 p-1 rounded-sm"
+              className="bg-dark-primary-3l p-1 rounded-md"
               onClick={() => setActiveDark((value) => !value)}
             >
               <Image
+                className={style.imgSvg}
                 alt="dark mode toggle"
                 src={activeDark ? './dark.svg' : './light.svg'}
                 width="30"
