@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         light: {
           background: '#f4fcf7',
+          backgroundL: '#ddf6e5',
           primary: {
             r: 'hsl(142, 76%, 36%)',
             l: 'hsl(142, 76%, 36% , 0.5)',
@@ -25,6 +26,7 @@ const config: Config = {
         },
         dark: {
           background: '#041015',
+          backgroundL: '#07271d',
           primary: {
             r: 'hsl(142, 71%, 45%)',
             l: 'hsl(142, 71%, 45% , 0.5)',

@@ -28,7 +28,7 @@ export default function Navbar({ activeDark, setActiveDark }: NavbarProps) {
         <div
           className={`${style.navContent} ${
             openNav ? 'flex' : 'hidden'
-          }  bg-dark-primary-3l md:bg-inherit`}
+          }  bg-light-backgroundL dark:bg-dark-backgroundL md:bg-inherit`}
         >
           <ul className="flex flex-col md:static md:flex-row gap-5 font-semibold">
             <li className="cursor-pointer hover:text-dark-secondary-l">
