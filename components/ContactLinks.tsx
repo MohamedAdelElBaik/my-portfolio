@@ -1,5 +1,6 @@
 import GitHubIcon from './svg/GitHubIcon';
 import LinkIcon from './svg/LinkIcon';
+import LinkedInIcon from './svg/LinkedInIcon';
 import MailIcon from './svg/MailIcon';
 import TwitterIcon from './svg/TwitterIcon';
 
@@ -16,7 +17,7 @@ export default function ContactLinks() {
         href="https://www.linkedin.com/in/mohamedadelelbaik/"
         className="hover:scale-110 transition-transform duration-200"
       >
-        <LinkIcon />
+        <LinkedInIcon />
       </a>
       <a
         href="mailto:mohamedadelelbeak@gmail.com"
