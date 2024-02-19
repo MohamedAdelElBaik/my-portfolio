@@ -8,6 +8,7 @@ import './globals.css';
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import MailFly from '@/components/MailFly';
 
 const tomorrow = Tomorrow({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -33,18 +34,8 @@ export default function RootLayout({
         className={`${tomorrow.className} bg-light-background bg-opacity-60 dark:bg-dark-background text-light-secondary-r dark:text-dark-secondary-r`}
       >
         <Navbar activeDark={activeDark} setActiveDark={setActiveDark} />
-
         {children}
-
-        <span className="fixed -rotate-90 bottom-40 -left-40 flex gap-10 items-center transition hover:-translate-y-6 duration-500">
-          <div className="w-32 h-0.5 bg-light-secondary-l dark:bg-dark-secondary-l"></div>
-          <a
-            href="mailto:mohamedadelelbeak@gmail.com"
-            className="text-sm text-light-primary-l dark:text-dark-primary-l hover:text-dark-primary-r"
-          >
-            MohamedAdelElbeak@gmail.com
-          </a>
-        </span>
+        <MailFly />
         <Footer />
       </body>
     </html>
