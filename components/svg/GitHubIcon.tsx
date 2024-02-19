@@ -4,8 +4,8 @@ export default function GitHubIcon() {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       role="img"
-      width="28"
-      height="28"
+      width="30"
+      height="30"
       viewBox="0 0 24 24"
     >
       <path

@@ -2,7 +2,7 @@ export default function TwitterIcon() {
   return (
     <svg
       fill="none"
-      height="28"
+      height="22"
       width="28"
       viewBox="0.254 0.25 500 451.95400000000006"
     >
