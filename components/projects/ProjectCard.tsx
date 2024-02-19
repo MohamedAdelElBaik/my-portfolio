@@ -75,13 +75,13 @@ function ProjectDetails({ title, demoLink, githubLink }: DetailsProps) {
       <h2>{title}</h2>
       <span className="flex gap-2">
         <a
-          href={`/${githubLink}`}
+          href={githubLink}
           className="hover:scale-125 transition-transform duration-150"
         >
           <GitHubIcon />
         </a>
         <a
-          href={`/${demoLink}`}
+          href={demoLink}
           className="hover:scale-125 transition-transform duration-150"
         >
           <LinkIcon />
