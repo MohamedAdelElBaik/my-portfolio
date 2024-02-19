@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ContactLinks from './ContactLinks';
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
@@ -27,6 +28,9 @@ export default function Hero() {
       </div>
       <div className="rounded-lg overflow-hidden object-fill w-48 md:w-56 lg:w-72 md:flex-grow-0">
         <Image src="/myImage.jpg" alt="mohamed" width={300} height={300} />
+        <div className="flex gap-5 bg-dark-primary-3l px-2 py-4 justify-center items-center">
+          <ContactLinks />
+        </div>
       </div>
     </section>
   );
