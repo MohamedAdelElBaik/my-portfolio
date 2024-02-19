@@ -43,21 +43,27 @@ function ProjectImage({ children, imgPath }: ImageProps) {
   const [showDetails, setShowDetails] = useState(false);
   return (
     <div
-      className="w-84 overflow-hidden relative"
+      className="w-84 h-56 overflow-hidden relative"
       onMouseEnter={() => setShowDetails(true)}
       onMouseLeave={() => setShowDetails(false)}
     >
       <div className="absolute top-0 bottom-0 right-0 left-0">
         {showDetails && children}
       </div>
-      <Image src={`/${imgPath}.png`} alt="myaz" width={300} height={300} />
+      <Image
+        className="w-full h-full"
+        src={`/${imgPath}.png`}
+        alt={imgPath}
+        width={500}
+        height={500}
+      />
     </div>
   );
 }
 
 function Skills({ children }: Child) {
   return (
-    <div className="bg-dark-background bg-opacity-80 h-full grid  p-4 gap-4 grid-cols-2 justify-center items-center">
+    <div className="bg-dark-background bg-opacity-80 h-full grid px-2 py-6 gap-3 grid-cols-2 content-start items-center">
       {children}
     </div>
   );
