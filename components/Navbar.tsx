@@ -36,6 +36,7 @@ export default function Navbar({ activeDark, setActiveDark }: NavbarProps) {
     return () => {
       window.removeEventListener('scroll', controlNavbar);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastScrollY]);
 
   return (
@@ -52,19 +53,20 @@ export default function Navbar({ activeDark, setActiveDark }: NavbarProps) {
             <div
               className={`${style.navContent} ${
                 openNav ? 'flex' : 'hidden'
-              }  bg-light-backgroundL dark:bg-dark-backgroundL md:bg-inherit`}
+              }  bg-light-backgroundL dark:bg-dark-backgroundL md:bg-inherit md:dark:bg-inherit`}
+              onClick={() => setOpenNav(false)}
             >
               <ul className="flex flex-col md:static md:flex-row gap-5 font-semibold">
-                <li className="cursor-pointer hover:text-dark-secondary-l">
+                <li className="cursor-pointer hover:text-light-secondary-l hover:dark:text-dark-secondary-l">
                   <a href="#home">Home</a>
                 </li>
-                <li className="cursor-pointer hover:text-dark-secondary-l">
+                <li className="cursor-pointer hover:text-light-secondary-l hover:dark:text-dark-secondary-l">
                   <a href="#about">About</a>
                 </li>
-                <li className="cursor-pointer hover:text-dark-secondary-l">
+                <li className="cursor-pointer hover:text-light-secondary-l hover:dark:text-dark-secondary-l">
                   <a href="#projects">Projects</a>
                 </li>
-                <li className="cursor-pointer hover:text-dark-secondary-l">
+                <li className="cursor-pointer hover:text-light-secondary-l hover:dark:text-dark-secondary-l">
                   <a href="#skills">Skills</a>
                 </li>
               </ul>
