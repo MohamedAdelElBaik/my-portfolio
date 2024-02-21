@@ -35,7 +35,7 @@ export default function RootLayout({
       >
         <Navbar activeDark={activeDark} setActiveDark={setActiveDark} />
         {children}
-        <MailFly />
+        {/* <MailFly /> */}
         <Footer />
       </body>
     </html>
