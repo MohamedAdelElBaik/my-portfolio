@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import style from './Navbar.module.css';
+import Link from 'next/link';
 
 type NavbarProps = {
   activeDark: boolean;
@@ -71,9 +72,11 @@ export default function Navbar({ activeDark, setActiveDark }: NavbarProps) {
                 </li>
               </ul>
               <div className="flex justify-between gap-8">
-                <button className="py-1 px-2 border border-spacing-1 border-light-primary-r dark:border-dark-primary-r  text-light-primary-r dark:text-dark-primary-r hover:bg-light-primary-3l hover:dark:bg-dark-primary-3l rounded-md">
-                  Resume
-                </button>
+                <Link href="https://flowcv.com/resume/edghb969pu">
+                  <button className="py-1 px-2 border border-spacing-1 border-light-primary-r dark:border-dark-primary-r  text-light-primary-r dark:text-dark-primary-r hover:bg-light-primary-3l hover:dark:bg-dark-primary-3l rounded-md">
+                    Resume
+                  </button>
+                </Link>
                 <button
                   className="bg-dark-primary-3l p-1 rounded-md"
                   onClick={() => setActiveDark((value) => !value)}
