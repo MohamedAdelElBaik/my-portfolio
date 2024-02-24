@@ -8,7 +8,8 @@ import './globals.css';
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import MailFly from '@/components/MailFly';
+// import MailFly from '@/components/MailFly';
+import { ThemeProvider } from 'next-themes';
 
 const tomorrow = Tomorrow({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -26,17 +27,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [activeDark, setActiveDark] = useState(true);
-
   return (
-    <html lang="en" className={activeDark ? 'dark' : 'light'}>
+    <html lang="en">
       <body
         className={`${tomorrow.className} bg-light-background bg-opacity-60 dark:bg-dark-background text-light-secondary-r dark:text-dark-secondary-r`}
       >
-        <Navbar activeDark={activeDark} setActiveDark={setActiveDark} />
-        {children}
-        {/* <MailFly /> */}
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
+          {children}
+          {/* <MailFly /> */}
+
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

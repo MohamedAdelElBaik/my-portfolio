@@ -4,20 +4,18 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import style from './Navbar.module.css';
 import Link from 'next/link';
+import { useTheme } from 'next-themes';
 
-type NavbarProps = {
-  activeDark: boolean;
-  setActiveDark: React.Dispatch<React.SetStateAction<boolean>>;
-};
 type NavIconToggleProps = {
   openNav: boolean;
   setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export default function Navbar({ activeDark, setActiveDark }: NavbarProps) {
+export default function Navbar() {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [openNav, setOpenNav] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   const controlNavbar = () => {
     if (window.scrollY > lastScrollY) {
@@ -79,12 +77,20 @@ export default function Navbar({ activeDark, setActiveDark }: NavbarProps) {
                 </Link>
                 <button
                   className="bg-dark-primary-3l p-1 rounded-md"
-                  onClick={() => setActiveDark((value) => !value)}
+                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 >
+                  {
+                    // in first loading of page theme is undefined
+                    // when theme is undefined take src of dark
+                  }
                   <Image
                     className={style.imgSvg}
                     alt="dark mode toggle"
-                    src={activeDark ? './dark.svg' : './light.svg'}
+                    src={
+                      (theme || 'dark') === 'dark'
+                        ? './dark.svg'
+                        : './light.svg'
+                    }
                     width="30"
                     height="30"
                   />
