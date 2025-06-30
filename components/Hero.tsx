@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import ContactLinks from './ContactLinks';
+import Image from "next/image";
+import ContactLinks from "./ContactLinks";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
@@ -9,10 +9,10 @@ export default function Hero() {
       className="flex flex-col justify-center md:flex-row gap-8 items-center"
     >
       <div className="flex flex-col justify-center gap-2 md:gap-4 md:flex-1">
-        <span className="text-light-primary-r darK:text-dark-primary-r text-sm md:text-base">
+        <span className="text-dark-primary-r text-sm md:text-base">
           Hi, my name is
         </span>
-        <h1 className="text-light-primary-r darK:text-dark-primary-r text-3xl md:text-7xl font-bold">
+        <h1 className="text-dark-primary-r text-3xl md:text-7xl font-bold">
           Mohamed Adel
         </h1>
         <h2 className="text-xl md:text-5xl font-semibold">

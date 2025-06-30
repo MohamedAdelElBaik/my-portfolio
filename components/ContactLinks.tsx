@@ -1,8 +1,7 @@
-import GitHubIcon from './svg/GitHubIcon';
-import LinkIcon from './svg/LinkIcon';
-import LinkedInIcon from './svg/LinkedInIcon';
-import MailIcon from './svg/MailIcon';
-import TwitterIcon from './svg/TwitterIcon';
+import GitHubIcon from "./svg/GitHubIcon";
+import LinkedInIcon from "./svg/LinkedInIcon";
+import MailIcon from "./svg/MailIcon";
+import TwitterIcon from "./svg/TwitterIcon";
 
 export default function ContactLinks() {
   return (

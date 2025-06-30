@@ -1,14 +1,11 @@
-'use client';
-import GitHubCalendar from 'react-github-calendar';
-import { useTheme } from 'next-themes';
+"use client";
+import GitHubCalendar from "react-github-calendar";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
-  const { theme } = useTheme();
-
   return (
     <section id="about" className="flex flex-col justify-center gap-4 md:gap-8">
-      <h1 className="text-light-primary-r dark:text-dark-primary-r text-2xl md:text-4xl font-semibold">
+      <h1 className="text-dark-primary-r text-2xl md:text-4xl font-semibold">
         About Me
       </h1>
       <div className="leading-6 text-sm md:text-xl">
@@ -40,8 +37,8 @@ export default function About() {
           fontSize={12}
           year={2024}
           blockRadius={1}
-          style={{ margin: 'auto' }}
-          colorScheme={theme as 'dark' | 'light' | undefined}
+          style={{ margin: "auto" }}
+          colorScheme="dark"
         />
       </div>
     </section>

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from 'next/image';
-import style from './Skills.module.css';
-import SkillsList from './SkillsList';
+import style from "./Skills.module.css";
+import SkillsList from "./SkillsList";
 
 export default function Skills() {
   return (
@@ -9,7 +8,7 @@ export default function Skills() {
       id="skills"
       className="flex flex-col justify-center gap-4 md:gap-8"
     >
-      <h1 className="text-2xl md:text-4xl font-semibold text-light-primary-r dark:text-dark-primary-r">
+      <h1 className="text-2xl md:text-4xl font-semibold text-dark-primary-r">
         My Skills
       </h1>
       <div className="mb-8 md:mb-20">

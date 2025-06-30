@@ -1,12 +1,10 @@
-import Project from './ProjectCard';
-import Skill from './Skill';
+import Project from "./ProjectCard";
+import Skill from "./Skill";
 
 export default function Projects() {
   return (
     <section id="projects" className="flex flex-col">
-      <h1 className="text-3xl md:text-5xl text-light-primary-r dark:text-dark-primary-r">
-        My Projects
-      </h1>
+      <h1 className="text-3xl md:text-5xl text-dark-primary-r">My Projects</h1>
       <div className="my-8 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Project
           imgPath="myaz"
