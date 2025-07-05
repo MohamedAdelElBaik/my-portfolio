@@ -47,9 +47,7 @@ export default function Navbar() {
             <NavIconToggle openNav={openNav} setOpenNav={setOpenNav} />
 
             <div
-              className={`${style.navContent} ${
-                openNav ? "flex" : "hidden"
-              }  bg-background/80 md:bg-inherit`}
+              className={`${style.navContent} ${openNav ? "flex" : "hidden"} md:flex bg-background/80 md:bg-inherit`}
               onClick={() => setOpenNav(false)}
             >
               <ul className="flex flex-col md:static md:flex-row gap-5 font-semibold">
@@ -60,7 +58,10 @@ export default function Navbar() {
                   <a href="#about">About</a>
                 </li>
                 <li className="cursor-pointer hover:text-secondary/50">
-                  <a href="#projects">Projects</a>
+                  <Link href="/projects">Projects</Link>
+                </li>
+                <li className="cursor-pointer hover:text-secondary/50">
+                  <Link href="/blogs">Blogs</Link>
                 </li>
                 <li className="cursor-pointer hover:text-secondary/50">
                   <a href="#skills">Skills</a>

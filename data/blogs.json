@@ -1,0 +1,38 @@
+[
+  {
+    "department": "frontend",
+    "title": "Front-End Development",
+    "blogs": [
+      {
+        "id": 1,
+        "slug": "react-performance",
+        "title": "Optimizing React Performance",
+        "date": "2025-05-10",
+        "excerpt": "Tips and techniques to make your React applications faster and more responsive.",
+        "content": "# Optimizing React Performance\n\nIn this blog post we will explore ... (replace with real content later)"
+      },
+      {
+        "id": 2,
+        "slug": "css-grid-vs-flexbox",
+        "title": "CSS Grid vs Flexbox",
+        "date": "2025-04-02",
+        "excerpt": "Understanding when to use CSS Grid and when Flexbox is more suitable.",
+        "content": "# CSS Grid vs Flexbox\n\nLorem ipsum dolor sit amet ..."
+      }
+    ]
+  },
+  {
+    "department": "backend",
+    "title": "Back-End Development",
+    "blogs": [
+      {
+        "id": 1,
+        "slug": "node-security-best-practices",
+        "title": "Node.js Security Best Practices",
+        "date": "2025-03-15",
+        "excerpt": "Ensure your Node applications are secure with these best practices.",
+        "content": "# Node.js Security Best Practices\n\nCurabitur non nulla sit amet nisl tempus convallis quis ac lectus ..."
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "slug": "myaz-website",
+    "title": "MYAZ Website",
+    "imgPath": "myaz",
+    "githubLink": "https://github.com/MohamedAdelElBaik/ASCS-front",
+    "demoLink": "https://myaz1.vercel.app/",
+    "skills": [
+      "CSS modules",
+      "React.js",
+      "Axios",
+      "State Management",
+      "Vite",
+      "Dashboard",
+      "RESTful API"
+    ],
+    "description": "A responsive website for MYAZ platform built with React and CSS modules, featuring dashboard and RESTful API integration."
+  },
+  {
+    "id": 2,
+    "slug": "scu-attendance",
+    "title": "Student Attendance for SCU",
+    "imgPath": "Attendance",
+    "githubLink": "https://github.com/MohamedAdelElBaik/Suez-Canal-University-Attendance",
+    "demoLink": "https://scu-attendance.glitch.me/",
+    "skills": ["HTML", "CSS", "JavaScript", "jQuery", "jQuery UI", "sass"],
+    "description": "Web application to manage student attendance at Suez Canal University using jQuery and SCSS."
+  }
+]
