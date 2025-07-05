@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${tomorrow.className} bg-dark-background text-dark-secondary-r`}
+        className={`${tomorrow.className} bg-background text-secondary`}
       >
         <Navbar />
         {children}

@@ -9,10 +9,10 @@ export default function Hero() {
       className="flex flex-col justify-center md:flex-row gap-8 items-center"
     >
       <div className="flex flex-col justify-center gap-2 md:gap-4 md:flex-1">
-        <span className="text-dark-primary-r text-sm md:text-base">
+        <span className="text-primary text-sm md:text-base">
           Hi, my name is
         </span>
-        <h1 className="text-dark-primary-r text-3xl md:text-7xl font-bold">
+        <h1 className="text-primary text-3xl md:text-7xl font-bold">
           Mohamed Adel
         </h1>
         <h2 className="text-xl md:text-5xl font-semibold">
@@ -22,13 +22,13 @@ export default function Hero() {
           I'm a passionate Front-End web developer having an experience of web
           applications with React.js, Next.js, TypeScript and TailwindCSS.
         </p>
-        <span className="text-xs md:text-base text-dark-primary-r">
+        <span className="text-xs md:text-base text-primary">
           Currently available for a job & freelance
         </span>
       </div>
       <div className="rounded-lg overflow-hidden object-fill w-48 md:w-56 lg:w-72 md:flex-grow-0">
         <Image src="/myImage.jpg" alt="mohamed" width={300} height={300} />
-        <div className="flex gap-5 bg-dark-primary-3l px-2 py-4 justify-center items-center">
+        <div className="flex gap-5 bg-primary/20 px-2 py-4 justify-center items-center">
           <ContactLinks />
         </div>
       </div>

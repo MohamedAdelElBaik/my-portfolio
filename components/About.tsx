@@ -5,7 +5,7 @@ import GitHubCalendar from "react-github-calendar";
 export default function About() {
   return (
     <section id="about" className="flex flex-col justify-center gap-4 md:gap-8">
-      <h1 className="text-dark-primary-r text-2xl md:text-4xl font-semibold">
+      <h1 className="text-primary text-2xl md:text-4xl font-semibold">
         About Me
       </h1>
       <div className="leading-6 text-sm md:text-xl">
@@ -29,7 +29,7 @@ export default function About() {
         Let's connect and discuss how I can bring value to your next endeavor!
       </div>
 
-      <div className="mt-10 w-full border py-3 px-1 md:py-6 md:px-4 border-spacing-1 border-dark-primary-3l rounded-md shadow-2xl shadow-dark-primary-3l">
+      <div className="mt-10 w-full border py-3 px-1 md:py-6 md:px-4 border-spacing-1 border-primary/20 rounded-md shadow-2xl shadow-primary/20">
         <GitHubCalendar
           username="mohamedadelelbaik"
           blockSize={13}

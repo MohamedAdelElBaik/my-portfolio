@@ -63,7 +63,7 @@ function ProjectImage({ children, imgPath }: ImageProps) {
 
 function Skills({ children }: Child) {
   return (
-    <div className="bg-dark-background bg-opacity-80 h-full grid px-2 py-6 gap-3 grid-cols-2 content-start items-center">
+    <div className="bg-background/80 h-full grid px-2 py-6 gap-3 grid-cols-2 content-start items-center">
       {children}
     </div>
   );
@@ -71,7 +71,7 @@ function Skills({ children }: Child) {
 
 function ProjectDetails({ title, demoLink, githubLink }: DetailsProps) {
   return (
-    <div className="bg-dark-primary-3l flex justify-between px-3 py-5">
+    <div className="bg-primary/20 flex justify-between px-3 py-5">
       <h2>{title}</h2>
       <span className="flex gap-2">
         <a

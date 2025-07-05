@@ -2,4 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+
+  --primary: 142 71% 45%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 0 0% 95%;
+  --secondary-foreground: 240 5.9% 10%;
+}
+
+.dark {
+  --background: 210 24% 8%;
+  --foreground: 0 0% 95%;
+
+  --primary: 142 71% 45%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 0 0% 95%;
+  --secondary-foreground: 0 0% 9%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
 /* background-image: linear-gradient(to top, #030711, #0d1018, #15171f, #1b1c25, #21222c, #252d3e, #223950, #154662, #005f7a, #00777e, #008e6d, #16a249); */

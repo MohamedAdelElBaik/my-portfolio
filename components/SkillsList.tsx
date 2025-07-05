@@ -21,7 +21,7 @@ export default function SkillsList() {
       {' '}
       {skills.map((skill, index) => (
         <span
-          className="bg-dark-primary-3l p-2 rounded-md flex items-center hover:scale-110 transition-transform duration-300 shadow-2xl shadow-dark-primary-3l"
+          className="bg-primary/20 p-2 rounded-md flex items-center hover:scale-110 transition-transform duration-300 shadow-2xl shadow-primary/20"
           key={index}
         >
           <Image
