@@ -51,8 +51,8 @@ function ProjectImage({ children, imgPath }: ImageProps) {
         {showDetails && children}
       </div>
       <Image
-        className="w-full h-full"
-        src={`/${imgPath}.png`}
+        className="w-full h-full object-cover"
+        src={imgPath.startsWith("http") ? imgPath : `/${imgPath}.png`}
         alt={imgPath}
         width={500}
         height={500}
