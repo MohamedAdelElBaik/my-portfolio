@@ -24,10 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${tomorrow.className} bg-background text-secondary`}
+        className={`${tomorrow.className} bg-background text-secondary flex flex-col min-h-screen`}
       >
         <Navbar />
-        {children}
+        <main className="flex-1 pt-24">{children}</main>
         <Footer />
       </body>
     </html>
